@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+#profile-name {
+  color: navy;
+}
+
+.bio {
+  font-style: italic;
+  color: gray;
+}
+
+.button-primary {
+  background-color: blue;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
