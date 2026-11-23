@@ -6,10 +6,5 @@ test('rating count is ready before we continue', async ({ page }) => {
     .locator('..').getByText(/^[1-9]\d*$/);
 
   // Wait for the state we actually need.
-  //await expect(ratingCount).toBeVisible();
-
-//});
-// Deliberate classroom mistake: the response can take longer than this pause.
-await page.waitForTimeout(1000);
-expect(await ratingCount.isVisible()).toBe(true);
+  await expect(ratingCount).toBeVisible();
 });
